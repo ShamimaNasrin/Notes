@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group>
+        <item
+            android:id="@+id/createnoteMenuID"
+            android:title="Create new"
+            app:showAsAction="never"/>
+
+        <item android:title="Sort by">
+            <menu>
+                <item
+                    android:id="@+id/Alpha_sortID"
+                    android:title="Alphabetically"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/Time_sortID"
+                    android:title="Time"
+                    app:showAsAction="never"/>
+            </menu>
+        </item>
+
+        <item android:title="View by">
+        <menu>
+            <item
+                android:id="@+id/LV_viewID"
+                android:title="Listview"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/GV_viewID"
+                android:title="Gridview"
+                app:showAsAction="never"/>
+        </menu>
+        </item>
+
+    </group>
+
+</menu>

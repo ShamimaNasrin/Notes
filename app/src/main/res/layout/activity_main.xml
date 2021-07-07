@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/drawerlayoutID">
+
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/FloatButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="30sp"
+        android:src="@drawable/plus"
+        android:elevation="10dp"
+        app:pressedTranslationZ="10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <androidx.appcompat.widget.Toolbar
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/ToolbarID"
+          app:title="Notes"
+          android:background="#FFC107"/>
+
+      <SearchView
+          android:id="@+id/searchviewID"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="5sp"
+          android:queryHint="Search by title"
+          android:iconifiedByDefault="false"
+          android:background="#F4DB90"
+          android:layout_alignParentTop="false"/>
+
+      <ListView
+          android:id="@+id/ListviewID"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="5sp"
+          android:divider="#EFB918"
+          android:dividerHeight="1sp"/>
+
+      <GridView
+          android:id="@+id/GridviewID"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:numColumns="2"
+          android:layout_gravity="center"
+          android:listSelector="#00000000"
+          android:verticalSpacing="10sp"
+          android:padding="10sp"
+          android:visibility="gone"
+          />
+    </LinearLayout>
+
+
+  </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/NavigationviewID"
+        app:menu="@menu/menu_item"
+        app:headerLayout="@layout/nav_header"
+        android:layout_gravity="start"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateNote_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAF4C4"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:paddingRight="4dp"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TitleErrorTIID"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginLeft="5sp"
+            >
+
+            <EditText
+                android:id="@+id/TitleETID"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Title"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:layout_marginTop="5sp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/savebtnID"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="save"
+            android:layout_marginLeft="10sp"
+            android:background="#FAF4C4"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/NoteETID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Write note"
+        android:gravity="start"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:layout_marginTop="5sp"
+        android:padding="15sp"
+        android:textStyle="normal"/>
+
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NoteDetails_Activity"
+    android:background="#fff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FAF4C4"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:paddingRight="4dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginLeft="5sp"
+                android:textColorHint="#000"
+                >
+
+                <EditText
+                    android:id="@+id/Title_ETID"
+                    android:layout_width="300sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:hint="Title"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/save_btnID"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="save"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:layout_marginLeft="10sp"
+                android:background="#FAF4C4"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="#fff">
+
+            <ImageButton
+                android:id="@+id/delete_btnID"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="5sp"
+                android:src="@drawable/dustbin"
+                android:background="#fff"/>
+            <TextView
+                android:id="@+id/DateTVID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="date"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:layout_alignParentEnd="true"
+                android:paddingRight="15dp"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/Note_ETID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Write note"
+        android:gravity="start"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:layout_marginTop="5sp"
+        android:padding="15sp"
+        android:textStyle="normal"
+        android:background="#fff"/>
+
+</LinearLayout>
